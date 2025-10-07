@@ -18,6 +18,8 @@
     "dependencies": {
         "@popperjs/core": "^2.11.8",
         "admin-lte": "^4.0.0-rc3",
-        "bootstrap": "^5.3.8"
+        "bootstrap": "^5.3.8",
+        "bootstrap-icons": "^1.13.1",
+        "overlayscrollbars": "^2.12.0"
     }
 }
