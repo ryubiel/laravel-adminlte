@@ -24,35 +24,25 @@
     <meta name="supported-color-schemes" content="light dark"/>
     @vite('resources/scss/app.scss')
 </head>
-<!--end::Head-->
-<!--begin::Body-->
 <body class="layout-fixed sidebar-expand-lg sidebar-open bg-body-tertiary">
-@vite('resources/js/app.js')
-<!--begin::App Wrapper-->
-<div class="app-wrapper">
-    @include('parts.header')
-    @include('parts.side')
-    <!--begin::App Main-->
-    <main class="app-main">
-        <!--begin::App Content Header-->
-        @include('parts.content-header')
-        <!--end::App Content Header-->
-        <!--begin::App Content-->
-        <div class="app-content">
-            <!--begin::Container-->
-            <div class="container-fluid">
-                <!--begin::Row-->
-                @yield('content')
-                <!-- /.row (main row) -->
-            </div>
-            <!--end::Container-->
-        </div>
-        <!--end::App Content-->
-    </main>
-    <!--end::App Main-->
-    @include('parts.footer')
-</div>
+    @vite('resources/js/app.js')
+    <div class="app-wrapper">
+        @include('parts.header')
+        @include('parts.side')
 
+        <main class="app-main">
+            @include('parts.content-header')
+
+            <div class="app-content">
+                <div class="container-fluid">
+
+                    @yield('content')
+
+                </div>
+            </div>
+        </main>
+
+        @include('parts.footer')
+    </div>
 </body>
-{{--<!--end::Body-->--}}
 </html>
