@@ -7,7 +7,7 @@
         </div>
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Insert your e-mail</p>
                 <form action="{{ route('password.email') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">

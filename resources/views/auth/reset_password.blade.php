@@ -7,7 +7,7 @@
         </div>
         <div class="card">
             <div class="card-body register-card-body">
-                <p class="register-box-msg">Register a new membership</p>
+                <p class="register-box-msg">Chose a new password</p>
                 <form action="{{ route('password.update') }}" method="post">
                     @csrf
                     <input type="hidden" name="token" value="{{ request()->token }}">
@@ -37,9 +37,9 @@
                         <button type="submit" class="btn btn-primary">Reset Password</button>
                     </div>
                 </form>
-                <p class="mb-0 text-center">
-                    <a href="{{ route('login') }}" class="text-center"> Return to login </a>
-                </p>
+                <div class="mt-2 text-center">
+                         <p class="mb-0"><a href="{{ route('login') }}" class="text-center">Back to login</a></p>
+                </div>
             </div>
         </div>
     </div>

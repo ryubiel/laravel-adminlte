@@ -45,9 +45,11 @@
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                 </form>
-                <p class="mb-0 text-center">
-                    <a href="{{ route('login') }}" class="text-center"> I already have a membership </a>
-                </p>
+                <div class="mt-2 text-center">
+                    <p class="mb-0 text-center">
+                        <a href="{{ route('login') }}" class="text-center"> I already have a membership </a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
