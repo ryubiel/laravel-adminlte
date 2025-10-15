@@ -1,5 +1,4 @@
 <nav class="app-header navbar navbar-expand bg-body">
-    <!--begin::Container-->
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -7,7 +6,7 @@
                     <i class="bi bi-list"></i>
                 </a>
             </li>
-            <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item d-none d-md-block"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
             <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -44,7 +43,6 @@
                                 </p>
                             </div>
                         </div>
-                        <!--end::Message-->
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item">
@@ -126,8 +124,6 @@
                     <a href="#" class="dropdown-item dropdown-footer"> See All Notifications </a>
                 </div>
             </li>
-            <!--end::Notifications Dropdown Menu-->
-            <!--begin::Fullscreen Toggle-->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-lte-toggle="fullscreen">
                     <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>

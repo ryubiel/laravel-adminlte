@@ -10,9 +10,7 @@ $breadcrumbs = [
 
 @section('content')
     <div class="row">
-        <!--begin::Col-->
         <div class="col-lg-3 col-6">
-            <!--begin::Small Box Widget 1-->
             <div class="small-box text-bg-primary">
                 <div class="inner">
                     <h3>150</h3>
@@ -36,11 +34,8 @@ $breadcrumbs = [
                     More info <i class="bi bi-link-45deg"></i>
                 </a>
             </div>
-            <!--end::Small Box Widget 1-->
         </div>
-        <!--end::Col-->
         <div class="col-lg-3 col-6">
-            <!--begin::Small Box Widget 2-->
             <div class="small-box text-bg-success">
                 <div class="inner">
                     <h3>53<sup class="fs-5">%</sup></h3>
@@ -64,11 +59,8 @@ $breadcrumbs = [
                     More info <i class="bi bi-link-45deg"></i>
                 </a>
             </div>
-            <!--end::Small Box Widget 2-->
         </div>
-        <!--end::Col-->
         <div class="col-lg-3 col-6">
-            <!--begin::Small Box Widget 3-->
             <div class="small-box text-bg-warning">
                 <div class="inner">
                     <h3>44</h3>
@@ -92,11 +84,8 @@ $breadcrumbs = [
                     More info <i class="bi bi-link-45deg"></i>
                 </a>
             </div>
-            <!--end::Small Box Widget 3-->
         </div>
-        <!--end::Col-->
         <div class="col-lg-3 col-6">
-            <!--begin::Small Box Widget 4-->
             <div class="small-box text-bg-danger">
                 <div class="inner">
                     <h3>65</h3>
@@ -127,12 +116,9 @@ $breadcrumbs = [
                     More info <i class="bi bi-link-45deg"></i>
                 </a>
             </div>
-            <!--end::Small Box Widget 4-->
         </div>
-        <!--end::Col-->
     </div>
     <div class="row">
-        <!-- Start col -->
         <div class="col-lg-7 connectedSortable">
             <div class="card mb-4">
                 <div class="card-header"><h3 class="card-title">Sales Value</h3></div>
@@ -140,8 +126,6 @@ $breadcrumbs = [
                     <div id="revenue-chart"></div>
                 </div>
             </div>
-            <!-- /.card -->
-            <!-- DIRECT CHAT -->
             <div class="card direct-chat direct-chat-primary mb-4">
                 <div class="card-header">
                     <h3 class="card-title">Direct Chat</h3>
@@ -193,56 +177,40 @@ $breadcrumbs = [
                                 <span class="direct-chat-name float-end"> Sarah Bullock </span>
                                 <span class="direct-chat-timestamp float-start"> 23 Jan 2:05 pm </span>
                             </div>
-                            <!-- /.direct-chat-infos -->
                             <img
                                 class="direct-chat-img"
                                 src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}"
                                 alt="message user image"
                             />
-                            <!-- /.direct-chat-img -->
                             <div class="direct-chat-text">You better believe it!</div>
-                            <!-- /.direct-chat-text -->
                         </div>
-                        <!-- /.direct-chat-msg -->
-                        <!-- Message. Default to the start -->
                         <div class="direct-chat-msg">
                             <div class="direct-chat-infos clearfix">
                                 <span class="direct-chat-name float-start"> Alexander Pierce </span>
                                 <span class="direct-chat-timestamp float-end"> 23 Jan 5:37 pm </span>
                             </div>
-                            <!-- /.direct-chat-infos -->
                             <img
                                 class="direct-chat-img"
                                 src="{{ Vite::asset('resources/images/user1-128x128.jpg') }}"
                                 alt="message user image"
                             />
-                            <!-- /.direct-chat-img -->
                             <div class="direct-chat-text">
                                 Working with AdminLTE on a great new app! Wanna join?
                             </div>
-                            <!-- /.direct-chat-text -->
                         </div>
-                        <!-- /.direct-chat-msg -->
-                        <!-- Message to the end -->
                         <div class="direct-chat-msg end">
                             <div class="direct-chat-infos clearfix">
                                 <span class="direct-chat-name float-end"> Sarah Bullock </span>
                                 <span class="direct-chat-timestamp float-start"> 23 Jan 6:10 pm </span>
                             </div>
-                            <!-- /.direct-chat-infos -->
                             <img
                                 class="direct-chat-img"
                                 src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}"
                                 alt="message user image"
                             />
-                            <!-- /.direct-chat-img -->
                             <div class="direct-chat-text">I would love to.</div>
-                            <!-- /.direct-chat-text -->
                         </div>
-                        <!-- /.direct-chat-msg -->
                     </div>
-                    <!-- /.direct-chat-messages-->
-                    <!-- Contacts are loaded here -->
                     <div class="direct-chat-contacts">
                         <ul class="contacts-list">
                             <li>
@@ -259,10 +227,8 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> How have you been? I was... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                             <li>
                                 <a href="#">
                                     <img
@@ -277,10 +243,8 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> I will be waiting for... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                             <li>
                                 <a href="#">
                                     <img
@@ -295,10 +259,8 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> I'll call you back at... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                             <li>
                                 <a href="#">
                                     <img
@@ -313,10 +275,8 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> Where is your new... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                             <li>
                                 <a href="#">
                                     <img
@@ -331,10 +291,8 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> Can I take a look at... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                             <li>
                                 <a href="#">
                                     <img
@@ -349,16 +307,11 @@ $breadcrumbs = [
                               </span>
                                         <span class="contacts-list-msg"> Never mind I found... </span>
                                     </div>
-                                    <!-- /.contacts-list-info -->
                                 </a>
                             </li>
-                            <!-- End Contact Item -->
                         </ul>
-                        <!-- /.contacts-list -->
                     </div>
-                    <!-- /.direct-chat-pane -->
                 </div>
-                <!-- /.card-body -->
                 <div class="card-footer">
                     <form action="#" method="post">
                         <div class="input-group">
@@ -374,12 +327,8 @@ $breadcrumbs = [
                         </div>
                     </form>
                 </div>
-                <!-- /.card-footer-->
             </div>
-            <!-- /.direct-chat -->
         </div>
-        <!-- /.Start col -->
-        <!-- Start col -->
         <div class="col-lg-5 connectedSortable">
             <div class="card text-white bg-primary bg-gradient border-primary mb-4">
                 <div class="card-header border-0">
@@ -399,7 +348,6 @@ $breadcrumbs = [
                     <div id="world-map" style="height: 220px"></div>
                 </div>
                 <div class="card-footer border-0">
-                    <!--begin::Row-->
                     <div class="row">
                         <div class="col-4 text-center">
                             <div id="sparkline-1" class="text-dark"></div>
@@ -414,10 +362,8 @@ $breadcrumbs = [
                             <div class="text-white">Sales</div>
                         </div>
                     </div>
-                    <!--end::Row-->
                 </div>
             </div>
         </div>
-        <!-- /.Start col -->
     </div>
 @endsection
