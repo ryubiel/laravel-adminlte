@@ -15,8 +15,8 @@
                 </ol>
                 @endisset
             </div>
-            <div class="col-sm-6">
-                Actions
+            <div class="col-sm-6 text-end">
+                @yield('page-actions')
             </div>
         </div>
     </div>
