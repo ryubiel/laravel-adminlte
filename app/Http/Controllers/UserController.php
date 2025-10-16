@@ -40,6 +40,11 @@ class UserController extends Controller
         ]);
         $user->fill($input)->save();
 
-        return back()->with('status', 'Usuário editado com sucesso!');
+        return redirect()->route('users.index')->with('status', 'Usuário editado com sucesso!');
+    }
+
+    public function destroy(User $user) {
+        $user->delete();
+        return back()->with('status', 'Usuário removido com sucesso!');
     }
 }
