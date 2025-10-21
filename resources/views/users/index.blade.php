@@ -24,7 +24,7 @@
                 <th scope="row">{{ $user->id }}</th>
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
-                <td>
+                <td class="d-flex gap-2">
                     <a href="{{ route('users.edit', $user->id) }}" class="btn btn-primary btn-sm">Editar</a>
                     <form action="{{ route('users.destroy', $user->id) }}" method="POST">
                         @csrf
