@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Role;
 use App\Models\UserProfile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
 {
@@ -40,12 +41,14 @@ class UserController extends Controller
     }
 
     public function edit(User $user) {
+        Gate::authorize('edit', User::class);
         $user->load(['profile', 'interests']);
         $roles = Role::all();
         return view('users.edit', compact('user', 'roles'));
     }
 
     public function update(User $user, Request $request) {
+        Gate::authorize('edit', User::class);
         $input = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
@@ -59,6 +62,7 @@ class UserController extends Controller
 
     public function updateProfile(User $user, Request $request)
     {
+        Gate::authorize('edit', User::class);
         $input = $request->validate([
             'type' => 'required',
             'address' => 'nullable',
@@ -72,6 +76,7 @@ class UserController extends Controller
 
     public function updateInterests(User $user, Request $request)
     {
+        Gate::authorize('edit', User::class);
         $input = $request->validate([
             'interests' => 'nullable|array',
         ]);
@@ -96,6 +101,7 @@ class UserController extends Controller
     }
 
     public function destroy(User $user) {
+        Gate::authorize('destroy', User::class);
         $user->delete();
         return back()->with('status', 'Usuário removido com sucesso!');
     }
